@@ -1,59 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Ben Hernandez's portfolio site">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" type="text/css">
-    <link rel="stylesheet" href="main.css" type="text/css">
-    <title>Ben Hernandez</title>
-</head>
-<body>
-    <nav class="navbar">
-        <a class="logo" href="https://github.com/capnnemo2">Ben</a>
-        <ul>
-            <li><a href="#about">About Ben</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Ben Hernandez's portfolio site">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" type="text/css">
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <script src="https://kit.fontawesome.com/b3bacbb8b3.js" crossorigin="anonymous"></script>
+        <title>Ben Hernandez</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <a class="logo" href="https://github.com/capnnemo2">Ben</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
 
-    <header class="parallax1">
-        <h1>Hi, my name is Ben.</h1>
-    </header>
-    
-    <main>
-        <section class="bio fade">
-            <div>
-                <p>I am a web developer who has emerged from the adventure tourism industry. I pride myself on my ability to think on my feet, my attention to detail, and my drive for efficiency. I enjoy applying the skills and knowledge I have gained from whitewater rafting and scuba diving to the creative process of web development.</p>
-                <p>Get in touch if you're curious how such seemingly incongruous activities as guiding a boat over a waterfall and creating a web app intersect.</p>
-            </div>
-            <a href="mailto:benjammin234@gmail.com"><button type="button" id="email">Email me</button></a>
-        </section>
+<!-- NEED TO COMPRESS ALL IMAGES STILL. portfolio reqs has some links to help -->
 
-        <div class="parallax2"></div>
 
-        <section id="about" class="fade">
-            <h2>About</h2>
-            <p>This is a paragraph or two about me.</p>
-            <p>It also includes another email link, as well as links to my <a href="https://www.linkedin.com/in/ben--hernandez/">LinkedIn</a> and <a href="https://github.com/capnnemo2">GitHub</a>.</p>
-        </section>
+        <!-- sweet pic of me? too much? -->
+        <header class="parallax1">
+            <h1 class="tagline">Hi, my name is Ben.</h1>
+        </header>
+        
+        <main>
+            <section class="bio content fade">
+                <div>
+                    <p>I am a web developer who has emerged from the adventure tourism industry. I take pride in my ability to think on my feet, my attention to detail, and my drive for efficiency. I enjoy applying the skills and knowledge I have gained from whitewater rafting and scuba diving to the creative process of web development.</p>
+                    <p>Get in touch if you're curious how such seemingly incongruous activities as guiding a boat over a waterfall and creating a web app intersect.</p>
+                </div>
+                <a href="mailto:benjammin234@gmail.com"><button type="button" id="email">Email me</button></a>
+            </section>
 
-        <div class="parallax3"></div>
+            <!-- this pic should be me going over pit falls -->
+            <div class="parallax2"></div>
 
-        <section id="projects" class="fade">
-            <h2>Projects</h2>
-            <p>This displays my project(s).</p>
-        </section>
+            <section id="about" class="content fade">
+                <h2>About</h2>
+                <p>Something cheesy like this:</p>
+                <p>As a raft guide you have to know the river, be intimately familiar with the individual rapids, yet be ready for the wild card paddler to drop their paddle at the exact wrong moment, be ready for the other raft to find a new rock that dumps everyone into the water. At the end of the day, your goal is to get everyone down the river safely.</p>
+                <p>Likewise, as a web developer you have to know the language, be intimately familiar with the methods, yet be ready for bugs, for that last minute change from the client. At the end of the day, your goal is get the project into production smoothly.</p>
+                <p>I am currently looking for work. Contact me:</p>
 
-        <div class="parallax4"></div>
+                <div class="social-link-bar">
+                    <span class="social-link"><a href="mailto:benjammin234@gmail.com"><i class="fas fa-envelope-square"></i></a></span>
+                    <span class="social-link"><a href="https://github.com/capnnemo2"><i class="fab fa-github-square"></i></a></span>
+                    <span class="social-link"><a href="https://www.linkedin.com/in/ben--hernandez/"><i class="fab fa-linkedin"></i></a></span>
+                </div>
+            </section>
 
-    </main>
+            <!-- sweet rafting pic, maybe something technical? -->
+            <div class="parallax3"></div>
 
-    <footer>
-        <p>&copy;2020 Ben Hernandez </p>
-    </footer>
+            <section id="projects" class="content fade">
+                <h2>Projects</h2>
+                <div class="a-project">
+                    <h3>Quiz App</h3>
+                    <div>
+                        <ul class="tech-used">
+                            <li><span><i class="fab fa-html5"></i></span></li>
+                            <li><i class="fab fa-css3-alt"></i></li>
+                            <li><i class="fab fa-js-square"></i></li>
+                        </ul>
 
-    
-</body>
+                    </div>
+                    <p>My first app. A short, simple quiz inspired by my time in the sea.</p>
+                    <div class="project-wrapper">
+                        <div class="link-wrapper">
+                            <a href="https://github.com/capnnemo2/quiz-app" class="project-link">Repo</a>
+                            <a href="https://capnnemo2.github.io/quiz-app/" class="project-link">Live</a>
+                        </div>
+                        <img src="images/quiz-app.png" alt="Screenshot of scuba quiz" height="200" width="400">
+                    </div>
+                    
+                </div>
+                
+            </section>
+
+            <!-- sweet diving pic to even it out -->
+            <div class="parallax4"></div>
+
+        </main>
+
+        <footer>
+            <p>&copy;2020 Ben Hernandez </p>
+        </footer>
+    </body>
 </html>

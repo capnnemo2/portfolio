@@ -12,6 +12,12 @@ header {
     text-align: center;
 }
 
+
+
+ul {
+    list-style-type: none;
+}
+
 main {
     flex: 1;
 }
@@ -19,6 +25,8 @@ main {
 a {
     text-decoration: none;
     color: black;
+    text-transform: uppercase;
+    font-size: .9em;
     transition: .2s;
 }
 
@@ -36,6 +44,8 @@ button:hover:enabled {
     cursor: pointer;
 }
 
+
+/* navbar stuff */
 .logo {
     display: inline-block;
     padding: 15px;
@@ -44,7 +54,7 @@ button:hover:enabled {
 
 .navbar {
     margin: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -55,6 +65,17 @@ button:hover:enabled {
     padding-left: 2em;
 }
 
+/* tagline */
+.tagline {
+    color: white;
+    margin-top: 200px;
+}
+
+/* main content areas */
+
+
+
+/* bio section (do I even need this?) */
 .bio {
     padding: 25px;
     display: flex;
@@ -76,18 +97,55 @@ button:hover:enabled {
     background-color: rgb(31, 90, 158);
 }
 
+
+/* about section (seems redundant with the bio section?) */
 #about {
+    padding-left: 25px;
 }
 
+.social-link-bar {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-link {
+    font-size: 2em;
+}
+
+
+/* projects section */
 #projects {
+    padding-left: 25px;
+}
+
+.tech-used {
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+}
+
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-wrapper {
+    padding: 10px;
+}
+
+.project-link {
+    padding: 20px;
 }
 
 
 /* parallax attempt #2 */
-
+/* images can--WILL--be changed. probably to dramatic rafting pics to support the bold words of the bio. maybe some sweet diving pics too, for variety */
 .parallax1 {
-    background-image: url('images/kitten.jpg');
-    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('images/kitten.jpg');
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,8 +154,9 @@ button:hover:enabled {
 }
 
 .parallax2 {
-    background-image: url('images/puppy.jpg');
-    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('images/puppy.jpg');
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,8 +164,9 @@ button:hover:enabled {
 }
 
 .parallax3 {
-    background-image: url('images/pup.jpg');
-    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('images/pup.jpg');
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -114,8 +174,9 @@ button:hover:enabled {
 }
 
 .parallax4 {
-    background-image: url('images/bill.jpg');
-    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('images/bill.jpg');
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -126,4 +187,5 @@ button:hover:enabled {
 .fade {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0));
+    padding-bottom: 20px;
 }
